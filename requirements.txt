@@ -1,0 +1,29 @@
+# Hotel Maguana - Dependencias del proyecto
+# Instalar con: pip install -r requirements.txt
+
+# Interfaz grafica - Incluida en Python estandar
+# tkinter (incluida en Python)
+
+# Base de datos - Incluida en Python estandar
+# sqlite3 (incluida en Python)
+
+# Generacion de reportes PDF
+reportlab>=3.6.0
+
+# Manejo de hojas de calculo Excel
+openpyxl>=3.0.9
+
+# Manejo de fechas
+python-dateutil>=2.8.2
+
+# Imagenes (opcional, para logos)
+Pillow>=9.0.0
+
+# Formato de numeros y monedas
+babel>=2.10.0
+
+# Para Windows 7 compatibilidad - versiones especificas
+# Si usas Windows 7, usa las siguientes versiones:
+# reportlab==3.6.12
+# openpyxl==3.0.10
+# Pillow==9.5.0
