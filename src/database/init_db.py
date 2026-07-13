@@ -9,6 +9,16 @@ import os
 import hashlib
 from datetime import datetime
 
+# Importar modelos
+sys_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+if sys_path not in sys.path:
+    sys.path.insert(0, sys_path)
+
+import sys
+from src.models.habitacion import Habitacion
+from src.models.cliente import Cliente  
+from src.models.reservacion import Reservacion
+
 # Ruta de la base de datos
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
@@ -247,7 +257,13 @@ def inicializar_db():
     try:
         # Crear tablas
         cursor.executescript(SCHEMA_SQL)
-        # Insertar tipos de habitacion
+        
+        # Crear tablas de modelos
+        Habitacion.crear_tabla(conn)
+        Cliente.crear_tabla(conn)
+        Reservacion.crear_tabla(conn)
+
+                # Insertar tipos de habitacion
         cursor.executemany(
             'INSERT OR IGNORE INTO tipos_habitacion (nombre, descripcion, capacidad, precio_base) VALUES (?,?,?,?)',
             DATA_INICIAL['tipos_habitacion']
