@@ -1,12 +1,10 @@
-# 🏨 Hotel Maguana - Sistema de Gestión Hotelera
+Hotel Maguana - Sistema de Gestión Hotelera
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue) ![SQLite](https://img.shields.io/badge/Database-SQLite3-green) ![Platform](https://img.shields.io/badge/Platform-Windows%207%2F10%2F11-orange) ![Version](https://img.shields.io/badge/Version-1.0.0-brown)
 
 Sistema completo de gestión hotelera desarrollado en Python con interfaz gráfica Tkinter y base de datos SQLite3. Compatible con Windows 7, 10 y 11.
 
----
-
-## Características Principales
+Características Principales
 
 - Gestión de Habitaciones (tipos, precios, disponibilidad)
 - Sistema de Reservaciones con control de disponibilidad
@@ -21,7 +19,7 @@ Sistema completo de gestión hotelera desarrollado en Python con interfaz gráfi
 
 ---
 
-## Requisitos del Sistema
+Requisitos del Sistema
 
 | Componente | Mínimo |
 |---|---|
@@ -32,28 +30,28 @@ Sistema completo de gestión hotelera desarrollado en Python con interfaz gráfi
 
 ---
 
-## Instalación
+Instalación
 
 ```bash
-# 1. Clonar el repositorio
+1. Clonar el repositorio
 git clone https://github.com/alcantaramateojuangabriel-alt/HotelMaguana.git
 cd HotelMaguana
 
-# 2. Crear entorno virtual
+2. Crear entorno virtual
 python -m venv venv
 venv\Scripts\activate
 
-# 3. Instalar dependencias
+3. Instalar dependencias
 pip install -r requirements.txt
 
-# 4. Inicializar la base de datos
+4. Inicializar la base de datos
 python src/database/init_db.py
 
-# 5. Ejecutar el sistema
+5. Ejecutar el sistema
 python main.py
 ```
 
-### Credenciales por Defecto
+Credenciales por Defecto
 | Usuario | Contraseña | Rol |
 |---|---|---|
 | admin | admin123 | Administrador |
@@ -61,7 +59,7 @@ python main.py
 
 ---
 
-## Estructura del Proyecto
+Estructura del Proyecto
 
 ```
 HotelMaguana/
@@ -107,7 +105,7 @@ HotelMaguana/
 
 ---
 
-## Base de Datos (SQLite3)
+Base de Datos (SQLite3)
 
 Tablas del sistema:
 - `habitaciones` - Catálogo y estado de habitaciones
@@ -122,7 +120,7 @@ Tablas del sistema:
 
 ---
 
-## Paleta de Colores
+Paleta de Colores
 
 | Color | HEX | Uso |
 |---|---|---|
@@ -134,9 +132,9 @@ Tablas del sistema:
 
 ---
 
-## Licencia
+Licencia
 
 MIT License - Ver archivo LICENSE
 
 ---
-*Desarrollado con amor para Hotel Maguana*
+Desarrollado por Juan Gabriel Alcántara Mateo
